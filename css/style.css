@@ -1,0 +1,131 @@
+body{
+    display:grid;
+    height:100vh;
+    width: 100vw;
+    grid-template-columns: 10vw 90vw;
+    grid-template-rows:  15vh 85vh;
+    grid-template-areas:
+   'nav hd'
+   'nav mn';
+   font-size: xx-large;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-weight: 300;
+}
+
+header{
+    grid-area: hd;
+    background-color: blue;
+    background-image: url(https://pbs.twimg.com/media/G1nwBLuWwAAFgX7.jpg);
+    background-size: contain;
+    color: aqua;
+}
+
+nav{
+    grid-area: nav;
+    background-color: red;
+}
+main{
+    grid-area: mn;
+    background-color: green;
+    overflow: scroll;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container details{
+background-color:yellow;
+width: 40vw;
+height: 5vh;
+margin:25px;
+padding: 20px;
+border-color: black;
+border-radius: 5px;
+font-size: 60px;
+}
+
+.table{
+background-color: pink;
+font-size:xx-large;
+z-index: 999;
+position: absolute;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+
+table,td,tr{
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    text-align: center;
+}
+
+.details{
+    z-index: 0;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    
+}
+
+.details[open]{
+    z-index: 1000;
+}
+
+::marker{
+    color: transparent;
+}
+
+::marker{
+    color: transparent;
+    width:100px;
+    height:100px;
+}
+
+
+.leaguelogo{
+    width: 50px;
+    height:50px;
+}
+
+#prem{
+    background-image: url(../img/logos/prem/prem.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#laliga{
+    background-image: url(../img/logos/liga/laliga.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#bundesliga{
+    background-image: url(../img/logos/Bundesliga/bundesliga.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#seriea{
+    background-image: url(../img/logos/Serie/seriea.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#ligue1{
+    background-image: url(../img/logos/1/mcdonalds.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#championsleague{
+    background-image: url(../img/logos/Championsleague/chamionsleague.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
