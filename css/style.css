@@ -129,3 +129,8 @@ table,td,tr{
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+audio{
+    height: 100px;
+    width: 150px;
+}
