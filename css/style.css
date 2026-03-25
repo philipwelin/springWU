@@ -14,40 +14,61 @@ body{
 
 header{
     grid-area: hd;
-    background-color: blue;
-    background-image: url(https://pbs.twimg.com/media/G1nwBLuWwAAFgX7.jpg);
+    background-color:white;
     background-size: contain;
-    color: aqua;
+    color: black;
+     margin-right: 20px;
+border: 3px solid lightskyblue;
+border-radius: 10px;
+font-size: 30px;
+text-align: center;
+z-index: 999;
 }
 
 nav{
     grid-area: nav;
-    background-color: red;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 10px;
+ border-color: black;
+border-radius: 10px;
+border: 3px solid lightskyblue;
+
+
 }
 main{
     grid-area: mn;
-    background-color: green;
+    background-color:white;
     overflow: scroll;
 }
 
 .container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+  
 }
 
+
 .container details{
-background-color:yellow;
+background-color:whitesmoke;
 width: 40vw;
-height: 5vh;
+height: 15vh;
 margin:25px;
 padding: 20px;
-border-color: black;
 border-radius: 5px;
 font-size: 60px;
+border: 3px solid lightskyblue;
+
+
+
 }
 
 .table{
-background-color: pink;
+background-color: white;
 font-size:xx-large;
 z-index: 999;
 position: absolute;
@@ -59,10 +80,11 @@ position: absolute;
 }
 
 
-table,td,tr{
+td,tr{
     border-bottom: 3px solid black;
     border-left: 3px solid black;
     text-align: center;
+    
 }
 
 .details{
@@ -94,43 +116,193 @@ table,td,tr{
 }
 
 #prem{
-    background-image: url(../img/logos/prem/prem.png);
+    background-image: url(../img/logos/prem/prem.png),linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
+
+ 
 
 }
 
+
+
 #laliga{
-    background-image: url(../img/logos/liga/laliga.png);
+    background-image: url(https://1000logos.net/wp-content/uploads/2019/01/Spanish-La-Liga-Logo-2016.png),linear-gradient(90deg,rgba(255, 0, 0, 1) 0%, rgba(255, 204, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
+    
 }
 
 #bundesliga{
-    background-image: url(../img/logos/Bundesliga/bundesliga.png);
+    background-image: url(../img/logos/Bundesliga/bundesliga.png),linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 149, 0, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 #seriea{
-    background-image: url(../img/logos/Serie/seriea.png);
+    background-image: url(../img/logos/Serie/seriea.png),    linear-gradient(90deg,rgba(42, 155, 59, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(237, 83, 83, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
+
 }
 
 #ligue1{
-    background-image: url(../img/logos/1/mcdonalds.png);
+    background-image: url(https://1000logos.net/wp-content/uploads/2019/01/Ligue-1-Logo.png),linear-gradient(90deg,rgba(0, 94, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
+
 }
 
 #championsleague{
-    background-image: url(../img/logos/Championsleague/chamionsleague.png);
+    background-image: url(../img/logos/Championsleague/cl.png),    linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
+    color: white;
+
 }
 
 audio{
     height: 100px;
-    width: 150px;
+    width:150px;
+}
+
+#haram{
+    width: 327.6px;
+    height: 245px;
+}
+
+a{
+    color:black;
+}
+
+a:hover{
+    color: lightblue;
+}
+
+
+
+
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+ justify-content: space-evenly;
+ 
+}
+
+.container2 div{
+background-color:lightskyblue;
+height:600px;
+width: 400px;;
+margin: 80px;
+
+
+
+display: grid;
+grid-template-rows: 75% 25%;
+}
+
+.container2 div img{
+width: 100%;
+height: 100%;
+}
+
+.container2 div p{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.container3{
+    display: grid;
+     grid-template-columns: 55% 20% 20%;
+    grid-template-rows: 45% 50%;
+    margin: 50px;
+    gap: 15px;
+    color: white;
+    font-size: 30px;
+    
+ 
+ 
+}
+
+#item31{
+    background-color: red;
+   grid-row: 1 / 3;
+    grid-column: 1;
+    height: 700px;
+    background-image: url(https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0318%2Fr1630383_1296x729_16%2D9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#item32{
+    background-color: blue;
+    grid-row: 1;
+    grid-column: 2;
+      background-image: url(https://preview.redd.it/2025-ballon-dor-cermony-leaked-v0-2fiqjdub6dye1.png?width=640&crop=smart&auto=webp&s=3a9dbaffcb5c93fee617f19afb837bb553e7148c);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#item33{
+   background-color: lightgreen;
+    grid-row: 1;
+    grid-column: 3;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksF1P_-aKVc0wBYLJDgEvcg1DZw9-wPRLyg&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#item34{
+    background-color: pink;
+    grid-row: 2;
+    grid-column: 2 / 4;
+    background-image: url(https://static.standard.co.uk/2025/01/20/13/00/tottenham.jpeg?trim=113,301,234,122&quality=75&auto=webp&width=1000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  
+}
+
+.container4{
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    gap: 15px;
+    margin: 30px;
+    font-size: 56px;
+    text-align: center;
+}
+
+#item41{
+    background-color: red;
+    height: 200px;
+
+}
+
+#item42{
+    background-color: blue;
+        height: 200px;
+
+}
+
+#item43{
+   background-color: lightgreen;
+       height: 200px;
+    
+}
+
+#item44{
+    background-color: pink;
+        height: 200px;
+
+}
+
+#item45{
+    background-color: aqua;
+        height: 200px;
 }
