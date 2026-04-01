@@ -10,15 +10,19 @@ body{
    font-size: xx-large;
    font-family:Georgia, 'Times New Roman', Times, serif;
    font-weight: 300;
+   font-style:italic;
+   font-family:'Times New Roman', Times, serif;
+
 }
 
 header{
     grid-area: hd;
     background-color:white;
+background: linear-gradient(90deg,rgba(135, 206, 250, 1) 35%, rgba(247, 253, 255, 1) 100%);
     background-size: contain;
     color: black;
      margin-right: 20px;
-border: 3px solid lightskyblue;
+border: 3px solid #87cefa;
 border-radius: 10px;
 font-size: 30px;
 text-align: center;
@@ -27,7 +31,8 @@ z-index: 999;
 
 nav{
     grid-area: nav;
-    background-color:white;
+    background-color: white;
+background: linear-gradient(0deg,rgba(247, 253, 255, 1) 0%, rgba(135, 206, 250, 1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,6 +48,9 @@ main{
     grid-area: mn;
     background-color:white;
     overflow: scroll;
+    margin: 10px;
+border: 3px solid lightskyblue;
+border-radius: 10px;
 }
 
 .container{
@@ -55,12 +63,12 @@ main{
 
 .container details{
 background-color:whitesmoke;
-width: 40vw;
+width: 35vw;
 height: 15vh;
 margin:25px;
 padding: 20px;
 border-radius: 5px;
-font-size: 60px;
+font-size: 50px;
 border: 3px solid lightskyblue;
 
 
@@ -82,7 +90,7 @@ position: absolute;
 
 td,tr{
     border-bottom: 3px solid black;
-    border-left: 3px solid black;
+ border: 3px solid black;
     text-align: center;
     
 }
@@ -92,7 +100,18 @@ td,tr{
     position: relative;
     text-align: center;
     line-height: 50px;
+
+
+    table{
+        position: relative;
+        top: 15px
+    }
     
+p{
+font-size: 30px;
+}
+
+
 }
 
 .details[open]{
@@ -120,6 +139,10 @@ td,tr{
     background-repeat: no-repeat;
     background-size: contain;
 
+    table{
+        background:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%) ;
+    }
+
  
 
 }
@@ -130,13 +153,20 @@ td,tr{
     background-image: url(https://1000logos.net/wp-content/uploads/2019/01/Spanish-La-Liga-Logo-2016.png),linear-gradient(90deg,rgba(255, 0, 0, 1) 0%, rgba(255, 204, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
-    
+    table{
+        background: linear-gradient(90deg,rgba(255, 0, 0, 1) 0%, rgba(255, 204, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    }
 }
 
 #bundesliga{
     background-image: url(../img/logos/Bundesliga/bundesliga.png),linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 149, 0, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
+    color: white;
+
+    table{
+        background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 149, 0, 1) 100%);
+    }
 }
 
 #seriea{
@@ -144,13 +174,18 @@ td,tr{
     background-repeat: no-repeat;
     background-size: contain;
 
+    table{
+        background: linear-gradient(90deg,rgba(42, 155, 59, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(237, 83, 83, 1) 100%);
+    }
 }
 
 #ligue1{
     background-image: url(https://1000logos.net/wp-content/uploads/2019/01/Ligue-1-Logo.png),linear-gradient(90deg,rgba(0, 94, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
-
+table{
+    background: linear-gradient(90deg,rgba(0, 94, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
+}
 }
 
 #championsleague{
@@ -158,6 +193,10 @@ td,tr{
     background-repeat: no-repeat;
     background-size: contain;
     color: white;
+
+    table{
+        background:linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%) ;
+    }
 
 }
 
@@ -176,7 +215,7 @@ a{
 }
 
 a:hover{
-    color: lightblue;
+    color: white;
 }
 
 
@@ -271,38 +310,199 @@ height: 100%;
 
 .container4{
     display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    gap: 15px;
+    grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15% 15% 15%;
     margin: 30px;
     font-size: 56px;
     text-align: center;
+    line-height: 200px;
+
 }
 
 #item41{
     background-color: red;
     height: 200px;
+        border-radius: 5px;
 
 }
 
 #item42{
-    background-color: blue;
+    background-color: lightskyblue;
         height: 200px;
+         border-radius: 5px;
+
 
 }
 
 #item43{
    background-color: lightgreen;
        height: 200px;
+        border-radius: 5px;
+
     
 }
 
 #item44{
     background-color: pink;
         height: 200px;
+         border-radius: 5px;
+
 
 }
 
 #item45{
     background-color: aqua;
         height: 200px;
+         border-radius: 5px;
+
+}
+
+#item46{
+background-color: cornflowerblue;
+height: 200px;
+ border-radius: 5px;
+
+
+}
+
+#item47{
+    background-color: bisque;
+    height: 200px;
+     border-radius: 5px;
+
+}
+
+#item48{
+    background-color:gold;
+    height: 200px;
+     border-radius: 5px;
+}
+
+#item49{
+    background-color: aquamarine;
+    height: 200px;
+     border-radius: 5px;
+}
+
+#item410{
+    background-color:hotpink;
+    height: 200px;
+     border-radius: 5px;
+}
+
+
+.container5{
+display:grid;
+grid-template-columns: 60% 40% ;
+
+
+}
+
+#big{
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    margin: 10px;
+    height: 1000px;
+}
+
+#item51{
+    background-color: aqua;
+        margin: 10px;
+            border-radius: 5px;
+}
+
+#item52{
+    background-color: blueviolet;
+        margin: 10px;
+            border-radius: 5px;
+}
+
+#item53{
+    background-color: chartreuse;
+        margin: 10px;
+            border-radius: 5px;
+}
+
+#item54{
+    background-color: red;
+        margin: 10px;
+            border-radius: 5px;
+}
+
+#item55{
+background-color:fuchsia;
+    margin: 10px;
+        border-radius: 5px;
+}
+
+
+#small{
+    display: grid;
+    grid-template-rows: 10% 10% 10% 10% 10%;
+    margin: 10px;
+    height: 1000px;
+}
+
+
+#item56{
+    background-color: wheat;
+        margin: 10px;
+        border-radius: 5px;
+}
+
+
+#item57{
+    background-color: wheat;
+        margin: 10px;
+        border-radius: 5px;
+}
+
+#item58{
+    background-color: wheat;
+        margin: 10px;
+        border-radius: 5px;
+}
+
+#item59{
+    background-color: wheat;
+        margin: 10px;
+        border-radius: 5px;
+}
+
+#item510{
+    background-color: wheat;
+        margin: 10px;
+        border-radius: 5px;
+}
+
+
+
+@media(max-width:500px){
+
+    body{
+        grid-template-columns: 0vw 90vw;
+    grid-template-rows:  15vh 85vh;
+    grid-template-areas:
+   'nav hd'
+   'nav mn';    
+   justify-content: center;
+   margin: 5px;
+   padding: 5px;
+
+    }
+  
+nav{
+    display: none;
+}
+
+
+header{
+    width: 100%;
+    align-content: center;
+    font-size: 25px;
+}
+
+coontainer{
+    font-size: 10px;
+}
+
 }
