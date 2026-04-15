@@ -17,7 +17,6 @@ body{
 
 header{
     grid-area: hd;
-    background-color:white;
 background: linear-gradient(90deg,rgba(135, 206, 250, 1) 35%, rgba(247, 253, 255, 1) 100%);
     background-size: contain;
     color: black;
@@ -31,7 +30,6 @@ z-index: 999;
 
 nav{
     grid-area: nav;
-    background-color: white;
 background: linear-gradient(0deg,rgba(247, 253, 255, 1) 0%, rgba(135, 206, 250, 1) 100%);
     display: flex;
     flex-direction: column;
@@ -317,83 +315,24 @@ height: 100%;
     text-align: center;
     line-height: 200px;
 
-}
 
-#item41{
-    background-color: red;
+div{
+ background-color: transparent;
     height: 200px;
         border-radius: 5px;
-
+                border: 3px solid #87cefa;
+                margin:10px;
 }
 
-#item42{
-    background-color: lightskyblue;
-        height: 200px;
-         border-radius: 5px;
 
-
-}
-
-#item43{
-   background-color: lightgreen;
-       height: 200px;
-        border-radius: 5px;
-
-    
-}
-
-#item44{
-    background-color: pink;
-        height: 200px;
-         border-radius: 5px;
-
-
-}
-
-#item45{
-    background-color: aqua;
-        height: 200px;
-         border-radius: 5px;
-
-}
-
-#item46{
-background-color: cornflowerblue;
-height: 200px;
- border-radius: 5px;
-
-
-}
-
-#item47{
-    background-color: bisque;
-    height: 200px;
-     border-radius: 5px;
-
-}
-
-#item48{
-    background-color:gold;
-    height: 200px;
-     border-radius: 5px;
-}
-
-#item49{
-    background-color: aquamarine;
-    height: 200px;
-     border-radius: 5px;
-}
-
-#item410{
-    background-color:hotpink;
-    height: 200px;
-     border-radius: 5px;
 }
 
 
 .container5{
 display:grid;
 grid-template-columns: 60% 40% ;
+text-align: center;
+
 
 
 }
@@ -403,37 +342,18 @@ grid-template-columns: 60% 40% ;
     grid-template-rows: 20% 20% 20% 20% 20%;
     margin: 10px;
     height: 1000px;
-}
+    font-size: 60px;
 
-#item51{
-    background-color: aqua;
+
+}
+   #big div{
+	background:transparent; 
         margin: 10px;
             border-radius: 5px;
-}
+                border: 3px solid #87cefa;
+                
+    }
 
-#item52{
-    background-color: blueviolet;
-        margin: 10px;
-            border-radius: 5px;
-}
-
-#item53{
-    background-color: chartreuse;
-        margin: 10px;
-            border-radius: 5px;
-}
-
-#item54{
-    background-color: red;
-        margin: 10px;
-            border-radius: 5px;
-}
-
-#item55{
-background-color:fuchsia;
-    margin: 10px;
-        border-radius: 5px;
-}
 
 
 #small{
@@ -441,50 +361,31 @@ background-color:fuchsia;
     grid-template-rows: 10% 10% 10% 10% 10%;
     margin: 10px;
     height: 1000px;
+    font-size: 45px;
 }
 
 
-#item56{
-    background-color: wheat;
+#small div{
+ background-color:transparent;
         margin: 10px;
         border-radius: 5px;
+                        border: 3px solid #87cefa;
+
 }
 
 
-#item57{
-    background-color: wheat;
-        margin: 10px;
-        border-radius: 5px;
-}
 
-#item58{
-    background-color: wheat;
-        margin: 10px;
-        border-radius: 5px;
-}
-
-#item59{
-    background-color: wheat;
-        margin: 10px;
-        border-radius: 5px;
-}
-
-#item510{
-    background-color: wheat;
-        margin: 10px;
-        border-radius: 5px;
-}
 
 
 
 @media(max-width:500px){
 
     body{
-        grid-template-columns: 0vw 90vw;
+        grid-template-columns:  100vw;
     grid-template-rows:  15vh 85vh;
     grid-template-areas:
-   'nav hd'
-   'nav mn';    
+   ' hd'
+   ' mn';    
    justify-content: center;
    margin: 5px;
    padding: 5px;
@@ -547,8 +448,30 @@ header{
         width: 100%;
         margin: 0px;
         font-weight: 999;
+        
     }
     
-
+.container5{
+    text-align: center;
+    
 
 }
+
+#big{
+    height: 800px;
+        font-size: 25px;
+}
+
+#small{ 
+    font-size: 17px;
+}
+
+}
+
+
+
+
+
+
+
+
