@@ -1,219 +1,223 @@
-body{
-    display:grid;
-    height:100vh;
+body {
+    display: grid;
+    height: 100vh;
     width: 100vw;
     grid-template-columns: 10vw 90vw;
-    grid-template-rows:  15vh 85vh;
+    grid-template-rows: 15vh 85vh;
     grid-template-areas:
-   'nav hd'
-   'nav mn';
-   font-size: xx-large;
-   font-family:Georgia, 'Times New Roman', Times, serif;
-   font-weight: 300;
-   font-style:italic;
-   font-family:'Times New Roman', Times, serif;
+        'nav hd'
+        'nav mn';
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
-header{
+header {
     grid-area: hd;
-background: linear-gradient(90deg,rgba(135, 206, 250, 1) 35%, rgba(247, 253, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(135, 206, 250, 1) 35%, rgba(247, 253, 255, 1) 100%);
     background-size: contain;
     color: black;
-     margin-right: 20px;
-border: 3px solid #87cefa;
-border-radius: 10px;
-font-size: 30px;
-text-align: center;
-z-index: 999;
+    margin-right: 20px;
+    border: 3px solid #87cefa;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    z-index: 999;
 }
 
-nav{
+nav {
     grid-area: nav;
-background: linear-gradient(0deg,rgba(247, 253, 255, 1) 0%, rgba(135, 206, 250, 1) 100%);
+    background: linear-gradient(0deg, rgba(247, 253, 255, 1) 0%, rgba(135, 206, 250, 1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 18px;
     margin-right: 10px;
- border-color: black;
-border-radius: 10px;
-border: 3px solid lightskyblue;
+    border-color: black;
+    border-radius: 10px;
+    border: 3px solid lightskyblue;
 
 
 }
-main{
+
+main {
     grid-area: mn;
-    background-color:white;
+    background-color: white;
     overflow: scroll;
     margin: 10px;
-border: 3px solid lightskyblue;
-border-radius: 10px;
+    border: 3px solid lightskyblue;
+    border-radius: 10px;
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  
-}
-
-
-
-.container details{
-background-color:whitesmoke;
-width: 35vw;
-height: 15vh;
-margin:25px;
-padding: 20px;
-border-radius: 5px;
-font-size: 50px;
-border: 3px solid lightskyblue;
-
-
 
 }
 
-.table{
-background-color: white;
-font-size:xx-large;
-z-index: 999;
-position: absolute;
+
+
+.container details {
+    background-color: whitesmoke;
+    width: 35vw;
+    height: 15vh;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 50px;
+    border: 3px solid lightskyblue;
+
+
+
 }
 
-.logo{
+.table {
+    background-color: white;
+    font-size: xx-large;
+    z-index: 999;
+    position: absolute;
+}
+
+.logo {
     width: 100px;
     height: 100px;
 }
 
 
-td,tr{
+td,
+tr {
     border-bottom: 3px solid black;
- border: 3px solid black;
+    border: 3px solid black;
     text-align: center;
-    
+
 }
 
-.details{
+.details {
     z-index: 0;
     position: relative;
     text-align: center;
     line-height: 50px;
 
 
-    table{
+    table {
         position: relative;
         top: 15px
     }
-    
-p{
-font-size: 30px;
-}
+
+    p {
+        font-size: 30px;
+    }
 
 
 }
 
-.details[open]{
+.details[open] {
     z-index: 1000;
 }
 
-::marker{
+::marker {
     color: transparent;
 }
 
-::marker{
+::marker {
     color: transparent;
-    width:100px;
-    height:100px;
-}
-
-
-.leaguelogo{
-    width: 50px;
-    height:50px;
-}
-
-#prem{
-    background-image: url(../img/logos/prem/prem.png),linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    table{
-        background:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%) ;
-    }
-
- 
-
-}
-
-
-
-#laliga{
-    background-image: url(https://1000logos.net/wp-content/uploads/2019/01/Spanish-La-Liga-Logo-2016.png),linear-gradient(90deg,rgba(255, 0, 0, 1) 0%, rgba(255, 204, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    table{
-        background: linear-gradient(90deg,rgba(255, 0, 0, 1) 0%, rgba(255, 204, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    }
-}
-
-#bundesliga{
-    background-image: url(../img/logos/Bundesliga/bundesliga.png),linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 149, 0, 1) 100%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: white;
-
-    table{
-        background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 149, 0, 1) 100%);
-    }
-}
-
-#seriea{
-    background-image: url(../img/logos/Serie/seriea.png),    linear-gradient(90deg,rgba(42, 155, 59, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(237, 83, 83, 1) 100%);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    table{
-        background: linear-gradient(90deg,rgba(42, 155, 59, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(237, 83, 83, 1) 100%);
-    }
-}
-
-#ligue1{
-    background-image: url(https://1000logos.net/wp-content/uploads/2019/01/Ligue-1-Logo.png),linear-gradient(90deg,rgba(0, 94, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    background-repeat: no-repeat;
-    background-size: contain;
-table{
-    background: linear-gradient(90deg,rgba(0, 94, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
-}
-}
-
-#championsleague{
-    background-image: url(../img/logos/Championsleague/cl.png),    linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: white;
-
-    table{
-        background:linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%) ;
-    }
-
-}
-
-audio{
+    width: 100px;
     height: 100px;
-    width:150px;
 }
 
-#haram{
-    width: 327.6px;
+
+.leaguelogo {
+    width: 50px;
+    height: 50px;
+}
+
+#prem {
+    background-image: url(../img/logos/prem/prem.png), linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    table {
+        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    }
+
+
+
+}
+
+
+
+#laliga {
+    background-image: url(https://1000logos.net/wp-content/uploads/2019/01/Spanish-La-Liga-Logo-2016.png), linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 204, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    table {
+        background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 204, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    }
+}
+
+#bundesliga {
+    background-image: url(../img/logos/Bundesliga/bundesliga.png), linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 149, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+
+    table {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 149, 0, 1) 100%);
+    }
+}
+
+#seriea {
+    background-image: url(../img/logos/Serie/seriea.png), linear-gradient(90deg, rgba(42, 155, 59, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(237, 83, 83, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    table {
+        background: linear-gradient(90deg, rgba(42, 155, 59, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(237, 83, 83, 1) 100%);
+    }
+}
+
+#ligue1 {
+    background-image: url(https://1000logos.net/wp-content/uploads/2019/01/Ligue-1-Logo.png), linear-gradient(90deg, rgba(0, 94, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    table {
+        background: linear-gradient(90deg, rgba(0, 94, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    }
+}
+
+#championsleague {
+    background-image: url(../img/logos/Championsleague/cl.png), linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+
+    table {
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    }
+
+}
+
+audio {
+    height: 100px;
+    width: 150px;
+}
+
+#haram {
+    width: 315px;
     height: 245px;
 }
 
-a{
-    color:black;
+a {
+    color: black;
 }
 
-a:hover{
+a:hover {
     color: white;
 }
 
@@ -221,31 +225,31 @@ a:hover{
 
 
 
-.container2{
+.container2 {
     display: flex;
     flex-wrap: wrap;
- justify-content: space-evenly;
- 
+    justify-content: space-evenly;
+
 }
 
-.container2 div{
-background-color:lightskyblue;
-height:600px;
-width: 400px;;
-margin: 80px;
+.container2 div {
+    background-color: lightskyblue;
+    height: 600px;
+    width: 400px;
+    margin: 80px;
 
 
 
-display: grid;
-grid-template-rows: 75% 25%;
+    display: grid;
+    grid-template-rows: 75% 25%;
 }
 
-.container2 div img{
-width: 100%;
-height: 100%;
+.container2 div img {
+    width: 100%;
+    height: 100%;
 }
 
-.container2 div p{
+.container2 div p {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -253,22 +257,22 @@ height: 100%;
 }
 
 
-.container3{
+.container3 {
     display: grid;
-     grid-template-columns: 55% 20% 20%;
+    grid-template-columns: 55% 20% 20%;
     grid-template-rows: 45% 50%;
     margin: 50px;
     gap: 15px;
     color: white;
     font-size: 30px;
-    
- 
- 
+
+
+
 }
 
-#item31{
+#item31 {
     background-color: red;
-   grid-row: 1 / 3;
+    grid-row: 1 / 3;
     grid-column: 1;
     height: 700px;
     background-image: url(https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0318%2Fr1630383_1296x729_16%2D9.jpg);
@@ -276,69 +280,69 @@ height: 100%;
     background-size: cover;
 }
 
-#item32{
+#item32 {
     background-color: blue;
     grid-row: 1;
     grid-column: 2;
-      background-image: url(https://preview.redd.it/2025-ballon-dor-cermony-leaked-v0-2fiqjdub6dye1.png?width=640&crop=smart&auto=webp&s=3a9dbaffcb5c93fee617f19afb837bb553e7148c);
+    background-image: url(https://preview.redd.it/2025-ballon-dor-cermony-leaked-v0-2fiqjdub6dye1.png?width=640&crop=smart&auto=webp&s=3a9dbaffcb5c93fee617f19afb837bb553e7148c);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
-#item33{
-   background-color: lightgreen;
+#item33 {
+    background-color: lightgreen;
     grid-row: 1;
     grid-column: 3;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksF1P_-aKVc0wBYLJDgEvcg1DZw9-wPRLyg&s);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
-#item34{
+#item34 {
     background-color: pink;
     grid-row: 2;
     grid-column: 2 / 4;
     background-image: url(https://static.standard.co.uk/2025/01/20/13/00/tottenham.jpeg?trim=113,301,234,122&quality=75&auto=webp&width=1000);
     background-size: cover;
     background-repeat: no-repeat;
-    
-  
+
+
 }
 
-.container4{
+.container4 {
     display: grid;
     grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15% 15% 15%;
     margin: 30px;
     font-size: 56px;
     text-align: center;
     line-height: 200px;
-    
 
 
-div{
- background-color: transparent;
-    height: 200px;
+
+    div {
+        background-color: transparent;
+        height: 200px;
         border-radius: 5px;
-                border: 3px solid #87cefa;
-                margin:10px;
-}
+        border: 3px solid #87cefa;
+        margin: 10px;
+    }
 
 
 }
 
 
-.container5{
-display:grid;
-grid-template-columns: 60% 40% ;
-text-align: center;
+.container5 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    text-align: center;
 
 
 
 }
 
-#big{
+#big {
     display: grid;
     grid-template-rows: 20% 20% 20% 20% 20%;
     margin: 10px;
@@ -347,17 +351,18 @@ text-align: center;
 
 
 }
-   #big div{
-	background:transparent; 
-        margin: 10px;
-            border-radius: 5px;
-                border: 3px solid #87cefa;
-                
-    }
+
+#big div {
+    background: transparent;
+    margin: 10px;
+    border-radius: 5px;
+    border: 3px solid #87cefa;
+
+}
 
 
 
-#small{
+#small {
     display: grid;
     grid-template-rows: 10% 10% 10% 10% 10%;
     margin: 10px;
@@ -366,62 +371,63 @@ text-align: center;
 }
 
 
-#small div{
- background-color:transparent;
-        margin: 10px;
-        border-radius: 5px;
-                        border: 3px solid #87cefa;
+#small div {
+    background-color: transparent;
+    margin: 10px;
+    border-radius: 5px;
+    border: 3px solid #87cefa;
 
 }
 
 
-.menu-button{
+.menu-button {
     display: none;
 }
 
 
 
 
-@media(max-width:500px){
+@media(max-width:500px) {
 
-    body{
-        grid-template-columns:  100vw;
-    grid-template-rows:  15vh 85vh;
-    grid-template-areas:
-   ' hd'
-   ' mn';    
-   justify-content: center;
-   margin: 5px;
-   padding: 5px;
+    body {
+        grid-template-columns: 100vw;
+        grid-template-rows: 15vh 85vh;
+        grid-template-areas:
+            ' hd'
+            ' mn';
+        justify-content: center;
+        margin: 5px;
+        padding: 5px;
 
     }
-  
-nav.menu {
-       display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    left: -200vw;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1000;
-    transition: left 0.67s;
-        background: linear-gradient(0deg,rgba(247, 253, 255, 1) 0%, rgba(135, 206, 250, 1) 100%);
-}
+
+    nav.menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: -200vw;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        transition: left 0.67s;
+        background: linear-gradient(0deg, rgba(247, 253, 255, 1) 0%, rgba(135, 206, 250, 1) 100%);
+    }
 
 
-header{
-    width: 100%;
-    align-content: center;
-    font-size: 25px;
-}
+    header {
+        width: 100%;
+        align-content: center;
+        font-size: 25px;
+    }
 
-.coontainer{
-    font-size: 10px;
-}
-.container details {
+    .coontainer {
+        font-size: 10px;
+    }
+
+    .container details {
         width: 80vw;
         height: auto;
         min-height: 80px;
@@ -438,12 +444,12 @@ header{
 
 
 
-     .table {
-        font-size:18px;
-        width: 100%;    
+    .table {
+        font-size: 18px;
+        width: 100%;
     }
 
-    #bundesliga .table{
+    #bundesliga .table {
         margin-top: 170px;
     }
 
@@ -453,76 +459,68 @@ header{
     }
 
 
-    .details[open]{
+    .details[open] {
         margin: 0px;
         padding: 0px;
     }
-    
-    .container4{
+
+    .container4 {
         font-size: 35px;
         width: 100%;
         margin: 0px;
         font-weight: 999;
-        
+
     }
-    
-.container5{
-    text-align: center;
-    
 
-}
+    .container5 {
+        text-align: center;
 
-#big{
-    height: 800px;
+
+    }
+
+    #big {
+        height: 800px;
         font-size: 25px;
+    }
+
+    #small {
+        font-size: 16px;
+    }
+
+
+
+    .menu-button {
+        cursor: pointer;
+        display: inline;
+    }
+
+    .fade-layer {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 1000;
+    }
+
+    .fade-layer.visible {
+        display: block;
+    }
+
+    .show {
+        left: 0;
+    }
+
+
+
+    nav.menu.show {
+        left: 0;
+    }
+
+
+
+    .material-icons {
+        font-size: 27 px;
+    }
+
+
+
 }
-
-#small{ 
-    font-size: 17px;
-}
-
-
-
-.menu-button {
-    cursor: pointer;
-    display: inline;
-}
-
-.fade-layer {
-    position: fixed;
-    background-color: rgba(0,0,0,0.5);
-    display: none;
-    z-index: 1000;
-}
-
-.fade-layer.visible {
-    display: block;
-}
-
-.show {
-    left: 0;
-}
-
-
-
-nav.menu.show {
-    left: 0;
-}
-
-
-
-.material-icons{
-    font-size: 30px;
-}
-
-
-
-}
-
-
-
-
-
-
-
-
