@@ -351,7 +351,6 @@ a:hover {
 }
 
 #big div {
-    background: transparent;
     margin: 10px;
     border-radius: 5px;
     border: 3px solid #87cefa;
@@ -381,6 +380,89 @@ a:hover {
 .menu-button {
     display: none;
 }
+
+#item41 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+
+}
+
+#item42 {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+#item43 {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+#item44 {
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+#item45 {
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+#item46 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#item47 {
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+}
+
+#item48 {
+    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+}
+
+#item49 {
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+}
+
+#item410 {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+
+#item51 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#item52 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#item53 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%)
+}
+
+#item54 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#item55 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#item56 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#item57 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#item58 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#item59 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#item510 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
 
 
 
@@ -468,7 +550,7 @@ a:hover {
     }
 
     .container4 {
-        font-size: 35px;
+        font-size: 25px;
         width: 100%;
         margin: 0px;
         font-weight: 999;
@@ -482,7 +564,7 @@ a:hover {
     }
 
     #big {
-        height: 800px;
+        height: auto;
         font-size: 25px;
     }
 
