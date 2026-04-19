@@ -101,18 +101,16 @@ tr {
     position: relative;
     text-align: center;
     line-height: 50px;
+}
+
+.details table {
+    position: relative;
+    top: 15px
+}
 
 
-    table {
-        position: relative;
-        top: 15px
-    }
-
-    p {
-        font-size: 30px;
-    }
-
-
+.details p {
+    font-size: 30px;
 }
 
 .details[open] {
@@ -139,15 +137,11 @@ tr {
     background-image: url(../img/logos/prem/prem.png), linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
-
-    table {
-        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-    }
-
-
-
 }
 
+#prem table {
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
 
 
 #laliga {
@@ -155,9 +149,11 @@ tr {
     background-repeat: no-repeat;
     background-size: contain;
 
-    table {
-        background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 204, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    }
+
+}
+
+#laliga table {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 204, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
 }
 
 #bundesliga {
@@ -165,20 +161,23 @@ tr {
     background-repeat: no-repeat;
     background-size: contain;
     color: white;
+}
 
-    table {
-        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 149, 0, 1) 100%);
-    }
+#bundesliga table {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 149, 0, 1) 100%);
+
 }
 
 #seriea {
     background-image: url(../img/logos/Serie/seriea.png), linear-gradient(90deg, rgba(42, 155, 59, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(237, 83, 83, 1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
+}
 
-    table {
-        background: linear-gradient(90deg, rgba(42, 155, 59, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(237, 83, 83, 1) 100%);
-    }
+
+#seriea table {
+    background: linear-gradient(90deg, rgba(42, 155, 59, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(237, 83, 83, 1) 100%);
+
 }
 
 #ligue1 {
@@ -186,10 +185,13 @@ tr {
     background-repeat: no-repeat;
     background-size: contain;
 
-    table {
-        background: linear-gradient(90deg, rgba(0, 94, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    }
 }
+
+#ligue1 table {
+    background: linear-gradient(90deg, rgba(0, 94, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
+}
+
+
 
 #championsleague {
     background-image: url(../img/logos/Championsleague/cl.png), linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -197,9 +199,13 @@ tr {
     background-size: contain;
     color: white;
 
-    table {
-        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    }
+
+
+}
+
+
+#championsleague table {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 
 }
 
@@ -319,15 +325,15 @@ a:hover {
 
 
 
-    div {
-        background-color: transparent;
-        height: 200px;
-        border-radius: 5px;
-        border: 3px solid #87cefa;
-        margin: 10px;
-    }
+}
 
 
+.container4 div {
+    background-color: transparent;
+    height: 200px;
+    border-radius: 5px;
+    border: 3px solid #87cefa;
+    margin: 10px;
 }
 
 
@@ -603,7 +609,7 @@ a:hover {
 
 
     .material-icons {
-        font-size: 27 px;
+        font-size: 27px;
     }
 
     .container3 {
